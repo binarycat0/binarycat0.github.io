@@ -14,915 +14,6 @@
         "dash"
     ],
     "data": {
-        "Blockchain": {
-            "getbestblockhash": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getblock": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getblockchaininfo": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getblockcount": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getblockhash": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getblockheader": [
-                18,
-                17,
-                16,
-                15,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getblockstats": [
-                18,
-                17,
-                "bch"
-            ],
-            "getchaintips": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getchaintxstats": [
-                18,
-                17,
-                16,
-                15,
-                "bch"
-            ],
-            "getdifficulty": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getmempoolancestors": [
-                18,
-                17,
-                16,
-                15,
-                13,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getmempooldescendants": [
-                18,
-                17,
-                16,
-                15,
-                13,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getmempoolentry": [
-                18,
-                17,
-                16,
-                15,
-                13,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getmempoolinfo": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getrawmempool": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "gettxout": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "gettxoutproof": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "gettxoutsetinfo": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "preciousblock": [
-                18,
-                17,
-                16,
-                15,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "pruneblockchain": [
-                18,
-                17,
-                16,
-                15,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "savemempool": [
-                18,
-                17,
-                16,
-                "bch"
-            ],
-            "scantxoutset": [
-                18,
-                17
-            ],
-            "verifychain": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "verifytxoutproof": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getblockhashes": [
-                "dash"
-            ],
-            "getblockheaders": [
-                "dash"
-            ],
-            "getspecialtxes": [
-                "dash"
-            ],
-            "getspentinfo": [
-                "dash"
-            ]
-        },
-        "Control": {
-            "getinfo": [
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "dash",
-                "doge"
-            ],
-            "getmemoryinfo": [
-                18,
-                17,
-                16,
-                15,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getrpcinfo": [
-                18
-            ],
-            "help": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "logging": [
-                18,
-                17,
-                16
-            ],
-            "stop": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "uptime": [
-                18,
-                17,
-                16,
-                15,
-                "bch"
-            ],
-            "debug": [
-                "dash"
-            ]
-        },
-        "Generating": {
-            "generate": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "generatetoaddress": [
-                18,
-                17,
-                16,
-                15,
-                13,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getgenerate": [
-                11,
-                12,
-                "zec"
-            ],
-            "setgenerate": [
-                11,
-                12,
-                "zec"
-            ]
-        },
-        "Mining": {
-            "getblocktemplate": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getmininginfo": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getnetworkhashps": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "prioritisetransaction": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "submitblock": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "submitheader": [
-                18
-            ],
-            "getblocksubsidy": [
-                "zec"
-            ],
-            "getlocalsolps": [
-                "zec"
-            ],
-            "getnetworksolps": [
-                "zec"
-            ],
-            "getauxblock": [
-                "doge"
-            ]
-        },
-        "Network": {
-            "addnode": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "clearbanned": [
-                18,
-                17,
-                16,
-                15,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "disconnectnode": [
-                18,
-                17,
-                16,
-                15,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getaddednodeinfo": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getconnectioncount": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getnettotals": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getnetworkinfo": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getnodeaddresses": [
-                18
-            ],
-            "getpeerinfo": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "listbanned": [
-                18,
-                17,
-                16,
-                15,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "ping": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "setban": [
-                18,
-                17,
-                16,
-                15,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "setnetworkactive": [
-                18,
-                17,
-                16,
-                15,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getdeprecationinfo": [
-                "zec"
-            ],
-            "getexcessiveblock": [
-                "bch"
-            ],
-            "setexcessiveblock": [
-                "bch"
-            ]
-        },
-        "Rawtransactions": {
-            "analyzepsbt": [
-                18
-            ],
-            "combinepsbt": [
-                18,
-                17
-            ],
-            "combinerawtransaction": [
-                18,
-                17,
-                16,
-                15,
-                "bch"
-            ],
-            "converttopsbt": [
-                18,
-                17
-            ],
-            "createpsbt": [
-                18,
-                17
-            ],
-            "createrawtransaction": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "decodepsbt": [
-                18,
-                17
-            ],
-            "decoderawtransaction": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "decodescript": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "finalizepsbt": [
-                18,
-                17
-            ],
-            "fundrawtransaction": [
-                18,
-                17,
-                16,
-                15,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "getrawtransaction": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "joinpsbts": [
-                18
-            ],
-            "sendrawtransaction": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "signrawtransaction": [
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "signrawtransactionwithkey": [
-                18,
-                17,
-                "bch"
-            ],
-            "testmempoolaccept": [
-                18,
-                17,
-                "bch"
-            ],
-            "utxoupdatepsbt": [
-                18
-            ]
-        },
-        "Util": {
-            "createmultisig": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "deriveaddresses": [
-                18
-            ],
-            "estimatefee": [
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "estimatesmartfee": [
-                18,
-                17,
-                16,
-                15,
-                12,
-                13,
-                14,
-                "dash",
-                "doge"
-            ],
-            "getdescriptorinfo": [
-                18
-            ],
-            "signmessagewithprivkey": [
-                18,
-                17,
-                16,
-                15,
-                13,
-                14,
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "validateaddress": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "verifymessage": [
-                18,
-                17,
-                16,
-                15,
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "bch",
-                "dash",
-                "doge"
-            ],
-            "estimatepriority": [
-                11,
-                12,
-                13,
-                14,
-                "zec",
-                "doge"
-            ],
-            "z_validateaddress": [
-                "zec"
-            ],
-            "estimatesmartpriority": [
-                12,
-                13,
-                14,
-                "doge"
-            ]
-        },
         "Wallet": {
             "abandontransaction": [
                 18,
@@ -1681,6 +772,915 @@
             ],
             "setprivatesendrounds": [
                 "dash"
+            ]
+        },
+        "Blockchain": {
+            "getbestblockhash": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getblock": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getblockchaininfo": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getblockcount": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getblockhash": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getblockheader": [
+                18,
+                17,
+                16,
+                15,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getblockstats": [
+                18,
+                17,
+                "bch"
+            ],
+            "getchaintips": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getchaintxstats": [
+                18,
+                17,
+                16,
+                15,
+                "bch"
+            ],
+            "getdifficulty": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getmempoolancestors": [
+                18,
+                17,
+                16,
+                15,
+                13,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getmempooldescendants": [
+                18,
+                17,
+                16,
+                15,
+                13,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getmempoolentry": [
+                18,
+                17,
+                16,
+                15,
+                13,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getmempoolinfo": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getrawmempool": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "gettxout": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "gettxoutproof": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "gettxoutsetinfo": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "preciousblock": [
+                18,
+                17,
+                16,
+                15,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "pruneblockchain": [
+                18,
+                17,
+                16,
+                15,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "savemempool": [
+                18,
+                17,
+                16,
+                "bch"
+            ],
+            "scantxoutset": [
+                18,
+                17
+            ],
+            "verifychain": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "verifytxoutproof": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getblockhashes": [
+                "dash"
+            ],
+            "getblockheaders": [
+                "dash"
+            ],
+            "getspecialtxes": [
+                "dash"
+            ],
+            "getspentinfo": [
+                "dash"
+            ]
+        },
+        "Rawtransactions": {
+            "analyzepsbt": [
+                18
+            ],
+            "combinepsbt": [
+                18,
+                17
+            ],
+            "combinerawtransaction": [
+                18,
+                17,
+                16,
+                15,
+                "bch"
+            ],
+            "converttopsbt": [
+                18,
+                17
+            ],
+            "createpsbt": [
+                18,
+                17
+            ],
+            "createrawtransaction": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "decodepsbt": [
+                18,
+                17
+            ],
+            "decoderawtransaction": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "decodescript": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "finalizepsbt": [
+                18,
+                17
+            ],
+            "fundrawtransaction": [
+                18,
+                17,
+                16,
+                15,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getrawtransaction": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "joinpsbts": [
+                18
+            ],
+            "sendrawtransaction": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "signrawtransaction": [
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "signrawtransactionwithkey": [
+                18,
+                17,
+                "bch"
+            ],
+            "testmempoolaccept": [
+                18,
+                17,
+                "bch"
+            ],
+            "utxoupdatepsbt": [
+                18
+            ]
+        },
+        "Control": {
+            "getinfo": [
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "dash",
+                "doge"
+            ],
+            "getmemoryinfo": [
+                18,
+                17,
+                16,
+                15,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getrpcinfo": [
+                18
+            ],
+            "help": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "logging": [
+                18,
+                17,
+                16
+            ],
+            "stop": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "uptime": [
+                18,
+                17,
+                16,
+                15,
+                "bch"
+            ],
+            "debug": [
+                "dash"
+            ]
+        },
+        "Generating": {
+            "generate": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "generatetoaddress": [
+                18,
+                17,
+                16,
+                15,
+                13,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getgenerate": [
+                11,
+                12,
+                "zec"
+            ],
+            "setgenerate": [
+                11,
+                12,
+                "zec"
+            ]
+        },
+        "Mining": {
+            "getblocktemplate": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getmininginfo": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getnetworkhashps": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "prioritisetransaction": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "submitblock": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "submitheader": [
+                18
+            ],
+            "getblocksubsidy": [
+                "zec"
+            ],
+            "getlocalsolps": [
+                "zec"
+            ],
+            "getnetworksolps": [
+                "zec"
+            ],
+            "getauxblock": [
+                "doge"
+            ]
+        },
+        "Network": {
+            "addnode": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "clearbanned": [
+                18,
+                17,
+                16,
+                15,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "disconnectnode": [
+                18,
+                17,
+                16,
+                15,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getaddednodeinfo": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getconnectioncount": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getnettotals": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getnetworkinfo": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getnodeaddresses": [
+                18
+            ],
+            "getpeerinfo": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "listbanned": [
+                18,
+                17,
+                16,
+                15,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "ping": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "setban": [
+                18,
+                17,
+                16,
+                15,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "setnetworkactive": [
+                18,
+                17,
+                16,
+                15,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "getdeprecationinfo": [
+                "zec"
+            ],
+            "getexcessiveblock": [
+                "bch"
+            ],
+            "setexcessiveblock": [
+                "bch"
+            ]
+        },
+        "Util": {
+            "createmultisig": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "deriveaddresses": [
+                18
+            ],
+            "estimatefee": [
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "estimatesmartfee": [
+                18,
+                17,
+                16,
+                15,
+                12,
+                13,
+                14,
+                "dash",
+                "doge"
+            ],
+            "getdescriptorinfo": [
+                18
+            ],
+            "signmessagewithprivkey": [
+                18,
+                17,
+                16,
+                15,
+                13,
+                14,
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "validateaddress": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "verifymessage": [
+                18,
+                17,
+                16,
+                15,
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "bch",
+                "dash",
+                "doge"
+            ],
+            "estimatepriority": [
+                11,
+                12,
+                13,
+                14,
+                "zec",
+                "doge"
+            ],
+            "z_validateaddress": [
+                "zec"
+            ],
+            "estimatesmartpriority": [
+                12,
+                13,
+                14,
+                "doge"
             ]
         },
         "Zmq": {
