@@ -31,7 +31,11 @@
     }
     
     .method-name {
-      width: 120px;
+      min-width: 120px;
+    }
+    
+    .method-coll-header{
+      min-width: 120px;
     }
   </style>
 </head>
@@ -86,7 +90,7 @@
       var row = $('<tr>', {
         'class': "text-primary text-center"
       });
-      var methodColHeader = $('<th>', {
+      var methodColHeader = $('<th class=method-coll-header>', {
         'scope': "row"
       }).html('Method name');
       var versionsName = $.map(versions, function (versionName) {
