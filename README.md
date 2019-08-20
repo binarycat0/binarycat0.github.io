@@ -1,8 +1,12 @@
-# catbinary.github.io
-
-## index.html
+# https://bitcoin.binarycat.ru/
 Comparing versions of bitcoincore json-rpc api
+- bitcoin json-rpc api
+- bitcoincash json-rpc api
+- zcash json-rpc api
+- doge json-rpc api
+- dash json-rpc api
 
+## bitcoin
 [https://bitcoincore.org/en/releases/](https://bitcoincore.org/en/releases/)
 
 - [Bitcoin Core 0.11.2](https://bitcoincore.org/en/releases/0.11.2/)
