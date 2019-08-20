@@ -31,3 +31,10 @@ Comparing versions of bitcoincore json-rpc api
 ## doge coin
 - 1.14
 
+## donate
+- ![btc](https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/bitoin_btc_coin_crypto-24.png)
+  1KB5GaKuZZa3GyuRgAXZJT5jmpiwppe6Ag
+- ![bch](https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/bitcoincash_bch_bitcoin-24.png)
+  qrr4nl9x2hrel637wqz0fz2u7pl082z4zsss6872rr
+- ![eth](https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/etherium_eth_ethcoin_crypto-24.png)
+  0x7F239Ff79c3151b29461A608F95ecfD4F994956E
