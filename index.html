@@ -29,6 +29,10 @@
     td[data-toggle="popover"]>i {
       pointer-events: none;
     }
+    
+    .method-name {
+      width: 120px;
+    }
   </style>
 </head>
 
@@ -146,7 +150,7 @@
         var row = $('<tr>', {
           'class': "text-primary"
         });
-        var cellMethodName = $('<td>').html(methodName);
+        var cellMethodName = $('<td class="method-name">').html(methodName);
         var cells = checkVersions(versions, methodVersions, help, methodName);
         row.append(cellMethodName);
         row.append(cells);
