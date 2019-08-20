@@ -227,13 +227,13 @@
       });
     }
 
-    createTables(get_json());
+    get_json();
     initialPopover();
 
     function get_json() {
-      fetch('/data.json')
+      fetch('data.json')
         .then(function (response) {
-          return response.json();
+          createTables(response.json());
         });
     }
   </script>
