@@ -53,24 +53,31 @@
   </div>
 
   <div class="container">
+
+
     <div class="text-center">
-      <span class="badge badge-warning">donate</span>
+      <div id="spinner" class="spinner-border text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div>
+        <span class="badge badge-warning">donate</span>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-4">
-        <dl class="row justify-content-md-center" style="padding: 10px">
-          <dt class="col-sm-2"><i class="fab fa-lg fa-bitcoin text-warning"></i></dt>
-          <dd class="col-sm-10 text-right">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-4">
+        <dl class="row justify-content-center" style="padding: 10px">
+          <dt class="col-2 content-center"><i class="fab fa-lg fa-bitcoin text-warning"></i></dt>
+          <dd class="col-10 text-right">
             <small class="text-muted">1KB5GaKuZZa3GyuRgAXZJT5jmpiwppe6Ag</small>
           </dd>
 
-          <dt class="col-sm-2"><i class="fab fa-lg fa-bitcoin text-primary fa-flip-horizontal"></i></dt>
-          <dd class="col-sm-10 text-right">
+          <dt class="col-2"><i class="fab fa-lg fa-bitcoin text-primary fa-flip-horizontal"></i></dt>
+          <dd class="col-10 text-right">
             <small class="text-muted">qrr4nl9x2hrel637wqz0fz2u7pl082z4zsss6872rr</small>
           </dd>
 
-          <dt class="col-sm-2"><i class="fab fa-lg fa-ethereum text-black"></i></dt>
-          <dd class="col-sm-10 text-right">
+          <dt class="col-2"><i class="fab fa-lg fa-ethereum text-black"></i></dt>
+          <dd class="col-10 text-right">
             <small class="text-muted">0x7F239Ff79c3151b29461A608F95ecfD4F994956E</small>
           </dd>
 
@@ -227,14 +234,14 @@
       });
     }
 
-    get_json();
-    initialPopover();
+    load_data();
 
-    function get_json() {
+    function load_data() {
       fetch('data.json')
-        .then(function (response) {
-          createTables(response.json());
-        });
+        .then(response => { return response.json() })
+        .then(data => { createTables(data) })
+        .then(() => { initialPopover() })
+        .thne(()=>{document.getElementById("spinner").style.display = "none";})
     }
   </script>
 </body>
