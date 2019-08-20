@@ -815,15 +815,6 @@
             "setprivatesendrounds": "setprivatesendrounds rounds<br><br>Set the number of rounds for PrivateSend mixing.<br><br>Arguments:<br>1. rounds         (numeric, required) The default number of rounds is 4 Cannot be more than 16 nor less than 2<br>Examples:<br> dash-cli setprivatesendrounds 4<br> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"setprivatesendrounds\", \"params\": [16] }' -H 'content-type: text/plain;' http://127.0.0.1:19001/",
             "settxfee": "settxfee amount<br><br>Set the transaction fee per kB. Overwrites the paytxfee parameter.<br><br>Arguments:<br>1. amount         (numeric or string, required) The transaction fee in DASH/kB<br><br>Result:<br>true|false        (boolean) Returns true if successful<br><br>Examples:<br> dash-cli settxfee 0.00001<br> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"settxfee\", \"params\": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:19001/",
             "signmessage": "signmessage \"address\" \"message\"<br><br>Sign a message with the private key of an address<br><br>Arguments:<br>1. \"address\"         (string, required) The dash address to use for the private key.<br>2. \"message\"         (string, required) The message to create a signature of.<br><br>Result:<br>\"signature\"          (string) The signature of the message encoded in base 64<br><br>Examples:<br><br>Unlock the wallet for 30 seconds<br> dash-cli walletpassphrase \"mypassphrase\" 30<br><br>Create the signature<br> dash-cli signmessage \"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwG\" \"my message\"<br><br>Verify the signature<br> dash-cli verifymessage \"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwG\" \"signature\" \"my message\"<br><br>As json rpc<br> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"signmessage\", \"params\": [\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwG\", \"my message\"] }' -H 'content-type: text/plain;' http://127.0.0.1:19001/"
-          },
-          "doge": {
-
-          },
-          "zec": {
-
-          },
-          "bch": {
-
           }
         }
       };
