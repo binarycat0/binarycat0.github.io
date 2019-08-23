@@ -1,4 +1,4 @@
-# https://bitcoin.binarycat.ru/
+# https://www.bitcoinapi.ru/
 Comparing versions of bitcoincore json-rpc api
 - bitcoin json-rpc api
 - bitcoincash json-rpc api
