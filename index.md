@@ -1,6 +1,6 @@
 ## contacts
 
-- [Email](mailto:admin@cloudhadoop.com)
+- [Email](mailto:from_github@binaryc.at)
 
 - [LinkedIn](https://www.linkedin.com/in/binarycat/)
 
