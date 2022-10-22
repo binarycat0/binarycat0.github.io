@@ -1,4 +1,4 @@
-# binaryc.at contacts
+## contacts
 
 - [Email](mailto:admin@cloudhadoop.com)
 
