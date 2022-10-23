@@ -1,6 +1,6 @@
 ## contacts
 
-- [Email](mailto:from_github@binaryc.at)
+- [Email](mailto:from_web@binaryc.at)
 
 - [LinkedIn](https://www.linkedin.com/in/binarycat/)
 
