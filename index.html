@@ -1,6 +1,262 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>tools.binaryc.at</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>tools · binaryc.at</title>
+    <meta name="description" content="Small developer tools by Artur Rakhmatulin." />
+    <link rel="canonical" href="https://tools.binaryc.at/" />
+    <link rel="icon" href="https://binaryc.at/favicon.jpg" type="image/jpeg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="tools · binaryc.at" />
+    <meta property="og:description" content="Small developer tools by Artur Rakhmatulin." />
+    <meta property="og:url" content="https://tools.binaryc.at/" />
+    <!-- Palette, fonts and spacing mirror https://binaryc.at/ (src/styles/global.css). -->
+    <style>
+      :root {
+        --bg: #fbfbf9;
+        --text: #1a1a18;
+        --muted: #6b6b64;
+        --faint: #97978d;
+        --rule: #e3e3dc;
+        --accent: #b4432b;
+        --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+          'Helvetica Neue', Arial, sans-serif;
+        --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
+          'Liberation Mono', monospace;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131312;
+          --text: #ebebe6;
+          --muted: #9d9d94;
+          --faint: #6f6f68;
+          --rule: #2c2c29;
+          --accent: #e8795c;
+        }
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: clamp(2rem, 6vw, 5rem) 1.5rem 6rem;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font-sans);
+        line-height: 1.6;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid var(--rule);
+        transition: border-color 0.15s ease, color 0.15s ease;
+      }
+
+      a:hover {
+        color: var(--accent);
+        border-bottom-color: currentColor;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      .page {
+        max-width: 30rem;
+        margin: min(14vh, 7rem) auto 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.85rem, 5vw, 2.5rem);
+        font-weight: 640;
+        letter-spacing: -0.022em;
+        line-height: 1.15;
+      }
+
+      .tagline {
+        margin: 0.4rem 0 0;
+        color: var(--muted);
+        font-size: 1.0625rem;
+      }
+
+      .tagline .sep {
+        color: var(--faint);
+        padding: 0 0.5ch;
+      }
+
+      .tools {
+        margin: 3rem 0 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid var(--rule);
+      }
+
+      .tools li {
+        border-bottom: 1px solid var(--rule);
+      }
+
+      /* The whole row is the link; the rule only appears via the list borders. */
+      .tools a {
+        display: grid;
+        grid-template-columns: 2.25rem 1fr;
+        gap: 0 1rem;
+        align-items: center;
+        padding: 1.1rem 0.25rem;
+        border-bottom: 0;
+      }
+
+      .tools svg {
+        grid-row: span 2;
+        width: 2.25rem;
+        height: 2.25rem;
+        color: var(--faint);
+        transition: color 0.15s ease;
+      }
+
+      .tools a:hover svg {
+        color: var(--accent);
+      }
+
+      .tools .name {
+        font-family: var(--font-mono);
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      .tools .desc {
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.45;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        text-align: center;
+        font-family: var(--font-mono);
+        font-size: 0.8125rem;
+        color: var(--faint);
+      }
+
+      footer .gh {
+        display: inline-flex;
+        border-bottom: 0;
+      }
+
+      footer .gh svg {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main class="page">
+      <header>
+        <h1>tools</h1>
+        <p class="tagline">Small developer tools<span class="sep">·</span>by <a href="https://binaryc.at/">binaryc.at</a></p>
+      </header>
+
+      <!--
+        The list is hand-edited. To add a tool, copy one <li> block:
+        an inline SVG icon (24x24 viewBox, stroke="currentColor"),
+        and data-repo with the GitHub repo name. The name and description
+        are loaded from the repo on GitHub (its name and "About" text).
+      -->
+      <ul class="tools">
+        <li data-repo="watchcat">
+          <a href="/watchcat/">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span class="name"></span>
+            <span class="desc"></span>
+          </a>
+        </li>
+        <li data-repo="buildyard">
+          <a href="https://github.com/binarycat0/buildyard">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="13" width="8" height="8" rx="1" />
+              <rect x="13" y="13" width="8" height="8" rx="1" />
+              <rect x="8" y="3" width="8" height="8" rx="1" />
+            </svg>
+            <span class="name"></span>
+            <span class="desc"></span>
+          </a>
+        </li>
+      </ul>
+
+      <footer>
+        <a class="gh" href="https://github.com/binarycat0" aria-label="GitHub: binarycat0" title="github.com/binarycat0">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+          </svg>
+        </a>
+      </footer>
+    </main>
+
+    <script>
+      // Fill names and descriptions from each GitHub repo (name, "About" text). Unauthenticated
+      // API calls are limited to 60/hour per visitor, so results are cached
+      // for an hour.
+      (function () {
+        var KEY = 'gh-repo:';
+        var OWNER = 'binarycat0';
+        var TTL = 60 * 60 * 1000;
+
+        function cached(repo) {
+          try {
+            var hit = JSON.parse(localStorage.getItem(KEY + repo));
+            if (hit && Date.now() - hit.at < TTL) return hit;
+          } catch (e) {}
+          return null;
+        }
+
+        function remember(repo, name, text) {
+          try {
+            localStorage.setItem(KEY + repo, JSON.stringify({ at: Date.now(), name: name, text: text }));
+          } catch (e) {}
+        }
+
+        document.querySelectorAll('.tools li[data-repo]').forEach(function (li) {
+          var repo = li.dataset.repo;
+          var set = function (name, text) {
+            if (name) li.querySelector('.name').textContent = name;
+            if (text) li.querySelector('.desc').textContent = text;
+          };
+
+          var hit = cached(repo);
+          if (hit) return set(hit.name, hit.text);
+
+          fetch('https://api.github.com/repos/' + OWNER + '/' + repo, {
+            headers: { Accept: 'application/vnd.github+json' },
+          })
+            .then(function (r) {
+              return r.ok ? r.json() : null;
+            })
+            .then(function (data) {
+              if (!data) return;
+              remember(repo, data.name || '', data.description || '');
+              set(data.name, data.description);
+            })
+            .catch(function () {});
+        });
+      })();
+    </script>
+  </body>
 </html>
