@@ -174,9 +174,9 @@
       <!--
         The list is hand-edited. To add a tool, copy one <li> block:
         an inline SVG icon (24x24 viewBox, stroke="currentColor"),
-        the name, and data-repo with the GitHub repo name. The description
-        is loaded from the repo's "About" text on GitHub; the text written
-        here is only a fallback for when GitHub can't be reached.
+        and data-repo with the GitHub repo name. The name and description
+        are loaded from the repo on GitHub (its name and "About" text); the
+        text written here is only a fallback for when GitHub can't be reached.
       -->
       <ul class="tools">
         <li data-repo="watchcat">
@@ -212,36 +212,37 @@
     </main>
 
     <script>
-      // Fill descriptions from each repo's GitHub "About" text. Unauthenticated
+      // Fill names and descriptions from each GitHub repo (name, "About" text). Unauthenticated
       // API calls are limited to 60/hour per visitor, so results are cached
       // for an hour and the hand-written text stays if anything fails.
       (function () {
+        var KEY = 'gh-repo:';
         var OWNER = 'binarycat0';
         var TTL = 60 * 60 * 1000;
 
         function cached(repo) {
           try {
-            var hit = JSON.parse(localStorage.getItem('gh-desc:' + repo));
+            var hit = JSON.parse(localStorage.getItem(KEY + repo));
             if (hit && Date.now() - hit.at < TTL) return hit;
           } catch (e) {}
           return null;
         }
 
-        function remember(repo, text) {
+        function remember(repo, name, text) {
           try {
-            localStorage.setItem('gh-desc:' + repo, JSON.stringify({ at: Date.now(), text: text }));
+            localStorage.setItem(KEY + repo, JSON.stringify({ at: Date.now(), name: name, text: text }));
           } catch (e) {}
         }
 
         document.querySelectorAll('.tools li[data-repo]').forEach(function (li) {
           var repo = li.dataset.repo;
-          var desc = li.querySelector('.desc');
-          var set = function (text) {
-            if (text) desc.textContent = text;
+          var set = function (name, text) {
+            if (name) li.querySelector('.name').textContent = name;
+            if (text) li.querySelector('.desc').textContent = text;
           };
 
           var hit = cached(repo);
-          if (hit) return set(hit.text);
+          if (hit) return set(hit.name, hit.text);
 
           fetch('https://api.github.com/repos/' + OWNER + '/' + repo, {
             headers: { Accept: 'application/vnd.github+json' },
@@ -251,8 +252,8 @@
             })
             .then(function (data) {
               if (!data) return;
-              remember(repo, data.description || '');
-              set(data.description);
+              remember(repo, data.name || '', data.description || '');
+              set(data.name, data.description);
             })
             .catch(function () {});
         });
