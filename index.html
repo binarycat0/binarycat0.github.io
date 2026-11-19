@@ -174,10 +174,12 @@
       <!--
         The list is hand-edited. To add a tool, copy one <li> block:
         an inline SVG icon (24x24 viewBox, stroke="currentColor"),
-        the name, and a one-line description.
+        the name, and data-repo with the GitHub repo name. The description
+        is loaded from the repo's "About" text on GitHub; the text written
+        here is only a fallback for when GitHub can't be reached.
       -->
       <ul class="tools">
-        <li>
+        <li data-repo="watchcat">
           <a href="/watchcat/">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" />
@@ -187,7 +189,7 @@
             <span class="desc">Watches your pull requests (CI, reviews, conflicts), notifies you about changes, and hands follow-up work to your AI agent.</span>
           </a>
         </li>
-        <li>
+        <li data-repo="buildyard">
           <a href="https://github.com/binarycat0/buildyard">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="3" y="13" width="8" height="8" rx="1" />
@@ -208,5 +210,53 @@
         </a>
       </footer>
     </main>
+
+    <script>
+      // Fill descriptions from each repo's GitHub "About" text. Unauthenticated
+      // API calls are limited to 60/hour per visitor, so results are cached
+      // for an hour and the hand-written text stays if anything fails.
+      (function () {
+        var OWNER = 'binarycat0';
+        var TTL = 60 * 60 * 1000;
+
+        function cached(repo) {
+          try {
+            var hit = JSON.parse(localStorage.getItem('gh-desc:' + repo));
+            if (hit && Date.now() - hit.at < TTL) return hit;
+          } catch (e) {}
+          return null;
+        }
+
+        function remember(repo, text) {
+          try {
+            localStorage.setItem('gh-desc:' + repo, JSON.stringify({ at: Date.now(), text: text }));
+          } catch (e) {}
+        }
+
+        document.querySelectorAll('.tools li[data-repo]').forEach(function (li) {
+          var repo = li.dataset.repo;
+          var desc = li.querySelector('.desc');
+          var set = function (text) {
+            if (text) desc.textContent = text;
+          };
+
+          var hit = cached(repo);
+          if (hit) return set(hit.text);
+
+          fetch('https://api.github.com/repos/' + OWNER + '/' + repo, {
+            headers: { Accept: 'application/vnd.github+json' },
+          })
+            .then(function (r) {
+              return r.ok ? r.json() : null;
+            })
+            .then(function (data) {
+              if (!data) return;
+              remember(repo, data.description || '');
+              set(data.description);
+            })
+            .catch(function () {});
+        });
+      })();
+    </script>
   </body>
 </html>
