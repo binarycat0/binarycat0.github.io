@@ -175,8 +175,7 @@
         The list is hand-edited. To add a tool, copy one <li> block:
         an inline SVG icon (24x24 viewBox, stroke="currentColor"),
         and data-repo with the GitHub repo name. The name and description
-        are loaded from the repo on GitHub (its name and "About" text); the
-        text written here is only a fallback for when GitHub can't be reached.
+        are loaded from the repo on GitHub (its name and "About" text).
       -->
       <ul class="tools">
         <li data-repo="watchcat">
@@ -185,8 +184,8 @@
               <path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" />
               <circle cx="12" cy="12" r="3" />
             </svg>
-            <span class="name">watchcat</span>
-            <span class="desc">Watches your pull requests (CI, reviews, conflicts), notifies you about changes, and hands follow-up work to your AI agent.</span>
+            <span class="name"></span>
+            <span class="desc"></span>
           </a>
         </li>
         <li data-repo="buildyard">
@@ -196,8 +195,8 @@
               <rect x="13" y="13" width="8" height="8" rx="1" />
               <rect x="8" y="3" width="8" height="8" rx="1" />
             </svg>
-            <span class="name">buildyard</span>
-            <span class="desc">A local build manager with a web UI: run builds with different parameters for different projects.</span>
+            <span class="name"></span>
+            <span class="desc"></span>
           </a>
         </li>
       </ul>
@@ -214,7 +213,7 @@
     <script>
       // Fill names and descriptions from each GitHub repo (name, "About" text). Unauthenticated
       // API calls are limited to 60/hour per visitor, so results are cached
-      // for an hour and the hand-written text stays if anything fails.
+      // for an hour.
       (function () {
         var KEY = 'gh-repo:';
         var OWNER = 'binarycat0';
